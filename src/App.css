@@ -1,0 +1,67 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.shopping-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.items-container,
+.cart-container {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.cart-container {
+  background-color: #f5f5f5;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .shopping-container {
+    flex-direction: column;
+  }
+  
+  .items-container,
+  .cart-container {
+    width: 100%;
+  }
+}
